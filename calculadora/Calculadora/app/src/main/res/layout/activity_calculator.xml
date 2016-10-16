@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app=""
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_calculator"
     android:layout_width="match_parent"
@@ -73,7 +74,7 @@
         android:id="@+id/eql_btn"
         android:layout_alignTop="@+id/sum_btn"
         android:layout_toStartOf="@id/sum_btn"
-        android:textSize="24sp" />
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <Button
         android:text="0"
