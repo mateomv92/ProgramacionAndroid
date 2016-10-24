@@ -9,8 +9,14 @@ import android.widget.EditText;
 
 import java.lang.reflect.Array;
 
+
+
 public class CalculatorActivity extends AppCompatActivity {
 
+    String num1 = "";
+    String num2 = "";
+    String smbl= "";
+    boolean saber_num = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,167 +40,221 @@ public class CalculatorActivity extends AppCompatActivity {
         Button sbs_btn = (Button) findViewById(R.id.sbs_btn);
         Button eql_btn = (Button) findViewById(R.id.eql_btn);
         final EditText num_edit = (EditText) findViewById(R.id.num_edit);
-        String[] partes;
-        String num1 = "";
-        String num2 = "";
-        String smbl= "";
 
 
         btn0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "0";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"0";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"0";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "1";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"1";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"1";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "2";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"2";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"2";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "3";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"3";
+                    num_edit.setText(num1);;
+                }
+                else{
+                    num2 = num2+"3";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "4";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"4";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"4";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "5";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"5";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"5";
+                    num_edit.setText(num2);;
+                }
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "6";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"6";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"6";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "7";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"7";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"7";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "8";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"8";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"8";
+                    num_edit.setText(num2);
+                }
             }
         });
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nmb = "9";
-                String text = num_edit.getText().toString()+nmb;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+"9";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+"9";
+                    num_edit.setText(num2);
+                }
             }
         });
         dec_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String smbl = ".";
-                String text = num_edit.getText().toString()+smbl;
-                num_edit.setText(text);
+                if (saber_num == false){
+                    num1 = num1+".";
+                    num_edit.setText(num1);
+                }
+                else{
+                    num2 = num2+".";
+                    num_edit.setText(num2);
+                }
             }
         });
         div_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String smbl = " / ";
-                String text = num_edit.getText().toString()+smbl;
-                num_edit.setText(text);
+                smbl = "/";
+                saber_num = true;
+                num_edit.setText("");
             }
         });
         mlt_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String smbl = " * ";
-                String text = num_edit.getText().toString()+smbl;
-                num_edit.setText(text);
+                smbl = "*";
+                saber_num = true;
+                num_edit.setText("");
             }
         });
         sbs_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String smbl = " - ";
-                String text = num_edit.getText().toString()+smbl;
-                num_edit.setText(text);
+                smbl = "-";
+                saber_num = true;
+                num_edit.setText("");
             }
         });
         sum_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String smbl = " + ";
-                String text = num_edit.getText().toString()+smbl;
-                num_edit.setText(text);
+                smbl = "+";
+                saber_num = true;
+                num_edit.setText("");
             }
         });
         eql_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strnumero = num_edit.getText().toString();
-                if (strnumero.isEmpty()){
+                if (num1.isEmpty() && num2.isEmpty()){
                     num_edit.setText("0");
                 }
                 else {
-                    String partes[] = strnumero.split(" ");
-                    float num1 = Float.parseFloat(partes[0]);
-                    String simbolo = partes[1];
-                    Log.i("clicks", partes[2]);
-                    float num2 = Float.parseFloat(partes[2]);
-                    if (simbolo == "/" ){
-                        float resultado = num1/num2;
+
+                    if (smbl.equals("/")){
+                        float resultado = Float.parseFloat(num1)/Float.parseFloat(num2);
                         String result = String.format("%f",resultado);
                         num_edit.setText(result);
+                        num1 = result;
+                        num2 ="";
                     }
-                    else if (simbolo == " *"){
+                    else if (smbl.equals("*")){
                         num_edit.setText("");
-                        float resultado = num1*num2;
+                        float resultado = Float.parseFloat(num1)*Float.parseFloat(num2);
                         String result = String.format("%f",resultado);
                         num_edit.setText(result);
+                        num1 =  result;
+                        num2 ="";
                     }
-                    else if (simbolo == " -"){
+                    else if (smbl.equals("-")){
                         num_edit.setText("");
-                        float resultado = num1-num2;
+                        float resultado = Float.parseFloat(num1)- Float.parseFloat(num2);
                         String result = String.format("%f",resultado);
                         num_edit.setText(result);
+                        num1 = result;
+                        num2 ="";
                     }
-                    else if (simbolo == " +"){
+                    else if (smbl.equals("+")){
                         num_edit.setText("");
-                        float resultado = num1+num2;
+                        float resultado = Float.parseFloat(num1)+Float.parseFloat(num2);
                         String result = String.format("%f",resultado);
                         num_edit.setText(result);
+                        num1 = result;
+                        num2 ="";
                     }
                 }
             }
@@ -203,13 +263,12 @@ public class CalculatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 num_edit.setText("");
-
+                saber_num = false;
+                num1 = "";
+                num2 = "";
             }
         });
 
     }
 
-    /*private String clickplus(String num1) {
-
-    }*/
 }

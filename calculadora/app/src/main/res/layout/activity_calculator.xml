@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="14dp"
+    tools:context="com.example.mateo.calculadora.CalculatorActivity">
+
+    <Button
+        android:text="CLR"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:id="@+id/clr_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:text="/"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/div_btn"
+        android:layout_below="@+id/clr_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/mlt_btn"
+        android:textSize="24sp"
+        android:layout_below="@+id/div_btn"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sum_btn"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/sbs_btn"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn9"
+        android:layout_toStartOf="@+id/btn9"
+        android:id="@+id/btn8"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn8"
+        android:layout_toStartOf="@+id/btn8"
+        android:id="@+id/btn7"
+        android:textSize="24sp"/>
+
+    <Button
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eql_btn"
+        android:layout_alignTop="@+id/sum_btn"
+        android:layout_toStartOf="@id/sum_btn"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn0"
+        android:layout_alignTop="@+id/eql_btn"
+        android:layout_toStartOf="@id/eql_btn"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dec_btn"
+        android:layout_alignTop="@+id/btn0"
+        android:layout_toStartOf="@+id/btn0"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_toStartOf="@id/btn3"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1"
+        android:layout_alignTop="@+id/btn2"
+        android:layout_toStartOf="@+id/btn2"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbs_btn"
+        android:layout_marginTop="34dp"
+        android:textSize="24sp"
+        android:layout_below="@+id/mlt_btn"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn3"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/sbs_btn"
+        android:layout_alignTop= "@+id/sbs_btn"
+        android:layout_toStartOf="@id/sbs_btn" />
+
+    <Button
+        android:text="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn9"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/div_btn"
+        android:layout_alignTop="@+id/div_btn"
+        android:layout_toStartOf="@+id/div_btn" />
+
+    <Button
+        android:text="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn6"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/mlt_btn"
+        android:layout_alignTop="@+id/mlt_btn"
+        android:layout_toStartOf="@id/mlt_btn" />
+
+    <Button
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn5"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/btn6"
+        android:layout_alignTop="@+id/btn6"
+        android:layout_toStartOf="@id/btn6" />
+
+    <Button
+        android:text="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn4"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/btn5"
+        android:layout_alignTop="@+id/btn5"
+        android:layout_toStartOf="@id/btn5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/clr_btn"
+        android:layout_alignTop="@+id/clr_btn"
+        android:id="@+id/@+id/nbr_edit"
+        android:inputType="text"
+        android:layout_alignStart="@+id/btn7"
+        android:layout_toStartOf="@+id/clr_btn" />
+
+</RelativeLayout>
