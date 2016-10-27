@@ -28,7 +28,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="40dp"
         android:textSize="24sp"
-        android:onClick="simbols" />
+        android:onClick="operadors" />
 
     <Button
         android:text="X"
@@ -39,7 +39,7 @@
         android:textSize="24sp"
         android:layout_below="@+id/div_btn"
         android:layout_alignParentEnd="true"
-        android:onClick="simbols" />
+        android:onClick="operadors" />
 
     <Button
         android:text="+"
@@ -50,7 +50,7 @@
         android:layout_below="@+id/sbs_btn"
         android:layout_alignParentEnd="true"
         android:textSize="24sp"
-        android:onClick="simbols" />
+        android:onClick="operadors" />
 
     <Button
         android:text="8"
@@ -98,7 +98,7 @@
         android:layout_alignTop="@+id/sum_btn"
         android:layout_toStartOf="@id/sum_btn"
         android:textSize="24sp"
-        android:onClick="simbols" />
+        android:onClick="igual" />
 
     <Button
         android:text="0"
@@ -149,7 +149,7 @@
         android:textSize="24sp"
         android:layout_below="@+id/mlt_btn"
         android:layout_alignParentEnd="true"
-        android:onClick="simbols" />
+        android:onClick="operadors" />
 
     <Button
         android:text="3"
