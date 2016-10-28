@@ -7,6 +7,7 @@ package com.example.mateo.calculadora;
 public class Calculadora {
     private double resultat;
     private char operador;
+    private String Excepcio;
 
     public Calculadora() {
         resultat = 0.;
@@ -33,7 +34,11 @@ public class Calculadora {
             this.resultat = this.resultat * operand;
         }
         else if(this.operador=='/') {
-            this.resultat = this.resultat / operand;
+            if(operand == 0){
+                this.resultat = 0;
+            }else{
+                this.resultat = this.resultat / operand;
+            }
         }
         this.operador = ' ';
     }
@@ -46,4 +51,5 @@ public class Calculadora {
     public double getResultat() {
         return resultat;
     }
+
 }
