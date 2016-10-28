@@ -60,7 +60,7 @@
         android:layout_toStartOf="@+id/btn9"
         android:id="@+id/btn8"
         android:textSize="24sp"
-        android:onClick="numeros (CalculatorActivity)" />
+        android:onClick="numeros" />
 
     <Button
         android:text="7"
@@ -108,7 +108,7 @@
         android:layout_alignTop="@+id/eql_btn"
         android:layout_toStartOf="@id/eql_btn"
         android:textSize="24sp"
-        android:onClick="numeros (CalculatorActivity)" />
+        android:onClick="numeros" />
 
     <Button
         android:text="."
@@ -160,7 +160,7 @@
         android:layout_alignBaseline="@+id/sbs_btn"
         android:layout_alignTop= "@+id/sbs_btn"
         android:layout_toStartOf="@id/sbs_btn"
-        android:onClick="numeros (CalculatorActivity)" />
+        android:onClick="numeros" />
 
     <Button
         android:text="9"

@@ -32,7 +32,7 @@ public class CalculatorActivity extends AppCompatActivity {
             numView.setText(numView.getText().toString()+b.getText().toString());
         }else{
             numView.setText(b.getText().toString());
-            if(!b.getText().toString().equals("0")) {
+            if(!b.getText().toString().equals("")) {
                 editant = true;
             }
         }

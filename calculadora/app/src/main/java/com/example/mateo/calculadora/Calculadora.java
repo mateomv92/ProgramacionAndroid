@@ -1,5 +1,7 @@
 package com.example.mateo.calculadora;
 
+import java.sql.ResultSet;
+
 /**
  * Created by alexplanasobany on 25/10/16.
  */
@@ -7,7 +9,6 @@ package com.example.mateo.calculadora;
 public class Calculadora {
     private double resultat;
     private char operador;
-    private String Excepcio;
 
     public Calculadora() {
         resultat = 0.;
@@ -35,7 +36,7 @@ public class Calculadora {
         }
         else if(this.operador=='/') {
             if(operand == 0){
-                this.resultat = 0;
+                this.resultat = Double.NaN;
             }else{
                 this.resultat = this.resultat / operand;
             }
