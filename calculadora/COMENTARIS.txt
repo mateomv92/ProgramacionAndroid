@@ -1,0 +1,11 @@
+
+Guay:
+- Interessant la classe Calculadora per separar els càlculs.
+- Codi de l'activitat clar i concís.
+- Molt guay lo de la gestió del punt.
+
+A millorar:
+- Els botons del layout són petits. Botó blau per a l'igual
+  (calia copiar el layout que vaig fer jo).
+- Quan divideixes números molt petits deu arribar als "1.xxxE-yy", amb la 'E' i
+  això no ho mostra bé. Llavors els càlculs són erronis.
